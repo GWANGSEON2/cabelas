@@ -1,0 +1,415 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cabelai</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartPanel">
+        <span>
+            cart bg
+        </span>
+        <div>
+            <div>
+                <h2>
+                    <span>1</span>items in cart
+                </h2>
+                <div>
+                    <span class="closePanel">close</span>                     
+                    <input type="button" value="close" class="material-symbols-outlined">
+                </div>
+            </div>
+            <form action="checkout.html">
+                <ul>
+                    <li>
+                        <a href="detail_Pooltoys1.html">
+                            <ol>
+                                <li>cartitemimg</li>
+                                <li>
+                                    <h3>Pro shops big Buck inflatable Float</h3>
+                                    <span>option green/Brown</span>
+                                    <strong>delivery within 7 days</strong>
+                                </li>
+                            </ol>
+                        </a>
+                        <input type="button" value="delete" class="material-symbols-outlined">
+                    </li>
+                </ul>
+                <section>
+                    <h2>Total</h2>
+                    <span>$29.99</span>
+                </section>
+                <a href="checkout.html">checkout</a>
+            </form>
+        </div>
+    </div>
+    <div id="loginPanel">
+        <div>
+            <strong>NAME</strong>
+            <ul>
+                <li><a href="account_Registered_information.html">Dashboard</a></li>
+                <li><a href="account_Orders.html">Orders details</a></li>
+                <li><a href="account_Inquiry_history.html">Customer service</a></li>
+            </ul>
+            <input type="button" value="Log out">             
+        </div>
+    </div>
+    <header class="headeritem">
+        <div>
+            <h1>
+                <a href="index.html">Cabelai</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>HUNTING</h3>
+                        <ol>
+                            <li><a href="list_huntingclothing.html">HUNTING CLOTHING</a></li>
+                            <li><a href="list_knivestools.html">KNIVES & TOOLS</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>SHOOTING</h3>
+                        <ol>
+                            <li><a href="list_recreationalshooting.html">RECREATIONAL SHOOTING</a></li>
+                            <li><a href="list_shootingaccessories.html">SHOOTING ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>CAMPING</h3>
+                        <ol>
+                            <li><a href="list_campfurniture.html">CAMP FURNITURE</a></li>
+                            <li><a href="list_tentsandshelters.html">TENTS AND SHELTERS</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>BOATING</h3>
+                        <ol>
+                            <li><a href="list_water_pool_toys_page1.html">WATER SPORTS</a></li>
+                            <li><a href="list_kayaks_canoespage1.html">KAYAKS & CANOES</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <span>
+                    <strong>cart</strong>
+                    <button type="button" data-panel="cartPanel">+99</button>
+                </span>
+                <button type="button" class="material-symbols-outlined login_active" id="loginButton">person</button>
+                <button type="button" class="material-symbols-outlined" id="menuButton">Menu</button>
+            </div>
+            <section>
+                <div>
+                    <input type="button" class="material-symbols-outlined" value="close">
+                    <ul>
+                        <li>
+                            <h3>HUNTING</h3>
+                            <ol>
+                                <li><a href="list_huntingclothing.html">HUNTING CLOTHING</a></li>
+                                <li><a href="list_knivestools.html">KNIVES & TOOLS</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>SHOOTING</h3>
+                            <ol>
+                                <li><a href="list_recreationalshooting.html">RECREATIONAL SHOOTING</a></li>
+                                <li><a href="list_shootingaccessories.html">SHOOTING ACCESSORIES</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>CAMPING</h3>
+                            <ol>
+                                <li><a href="list_campfurniture.html">CAMP FURNITURE</a></li>
+                                <li><a href="list_tentsandshelters.html">TENTS AND SHELTERS</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>BOATING</h3>
+                            <ol>
+                                <li><a href="list_water_pool_toys_page1.html">WATER SPORTS</a></li>
+                                <li><a href="list_kayaks_canoespage1.html">KAYAKS & CANOES</a></li>
+                            </ol>
+                        </li>
+                    </ul> 
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="detail_container" id="detail_container">
+        <div>
+            <article  class="detailSlider">
+                <h2>title</h2>
+                <ul>
+                    <li>
+                        <img src="images/multitool_item6img1.png" alt="detail_img">
+                    </li>
+                    <li>
+                        <img src="images/multitool_item6img2.png" alt="detail_img">
+                    </li>
+                    <li>
+                        <img src="images/multitool_item6img3.png" alt="detail_img">
+                    </li>
+                </ul>
+            </article>
+            <aside>
+                <form>
+                    <h2>Smith & Wesson Clip Folding Knife</h2>
+                    <div>
+                        <input type="button" value="wishlist">
+                    </div>
+                    <strong>$21.99</strong>
+                    <span>The Smith / Wesson</span>
+                    <strong><span>5</span>13 Reviews</strong>
+                                        <fieldset>
+                            <input type="radio" name="option" id="one">
+                            <label for="one">ONE TIME PURCHASE</label>
+                            <input type="radio" name="option" id="subscribe" checked>
+                            <label for="subscribe">SUBSCRIBE AND SAVE 10%</label>
+                    </fieldset>
+                    <div class="qtyComponent">
+                        <input type="button" value="-">
+                        <span>0</span>
+                        <input type="button" value="+">
+                    </div>
+                    <input type="button" data-panel="cartPanel" value="ADD TO CART">
+                    <strong>Satisfaction guaranteed Free Shipping for Subscribers</strong>
+                    <article>
+                        <h3>description</h3>
+                        <p>
+                            The Advanced Elements® AdvancedFrame® Inflatable Kayak in Green is a
+                            hybrid of a folding frame kayak and an inflatable kayak. Utilizing built-in
+                            aluminum ribs in the bow and stern, it slices through water like a knife
+                            and rivals the trackability of hard-shell kayaks. The stern acts as a skeg,
+                            increasing the tracking performance.
+                        </p>
+                    </article>
+                    <div>
+                        <dl>
+                            <dt>Length</dt>
+                            <dd>3.25"</dd>
+                        </dl>
+                        <dl>
+                            <dt>Edge</dt>
+                            <dd>Fine</dd>
+                        </dl>
+                        <dl>
+                            <dt>scales</dt>
+                            <dd>G10</dd>
+                        </dl>
+                        <dl>
+                            <dt>opening</dt>
+                            <dd>1-hand</dd>
+                        </dl>
+                    </div>
+                </form>
+            </aside>
+        </div>
+        <div class="slide">
+            <h2>Product recommendation</h2>
+            <ul class="recommandSlider">
+                <li>
+                    <img src="images/multitool_slideimg1.png" alt="slideimg1">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool3.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg2.png" alt="slideimg2">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool5.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg3.png" alt="slideimg3">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool10.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg4.png" alt="slideimg4">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool14.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg1.png" alt="slideimg1">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool3,html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg2.png" alt="slideimg2">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool5.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg3.png" alt="slideimg3">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool10.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/multitool_slideimg4.png" alt="slideimg4">
+                    <strong>Smith & Wesson Clip Folding Knife</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_multi_tool14.html">SHOP</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>RevieWs</h2>
+            <a href="review.html">WRITE A REVIEW</a>
+            <span class="rating5">5</span>
+            <strong>13 Reviews</strong>         
+            <ul>
+                <li>
+                    <div>
+                        <cite>OLIVER</cite>
+                        <strong>By Katherine H</strong>
+                        <span>star</span>
+                    </div>
+                    <div>
+                        <h3>So awesome!</h3>
+                        <p>
+                            This kayak exceeded my expectations. It's incredibly easy to assemble and pack up again. Very lightweight and the pack makes it easy to hike in and kayak in the
+                            back country.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <cite>OLIVER</cite>
+                        <strong>By Katherine H</strong>
+                        <span>star</span>
+                    </div>
+                    <div>
+                        <h3>So awesome!</h3>
+                        <p>
+                            This kayak exceeded my expectations. It's incredibly easy to assemble and pack up again. Very lightweight and the pack makes it easy to hike in and kayak in the
+                            back country.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <cite>OLIVER</cite>
+                        <strong>By Katherine H</strong>
+                        <span>star</span>
+                    </div>
+                    <div>
+                        <h3>So awesome!</h3>
+                        <p>
+                            This kayak exceeded my expectations. It's incredibly easy to assemble and pack up again. Very lightweight and the pack makes it easy to hike in and kayak in the
+                            back country.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <input type="button" value="LOAD MORE REVIEWS">
+        </div>
+    </div>
+    <footer id="footer">
+        <section>
+            <div>
+                <h2>SIGN UP AND RECEIVE 10% OFF YOUR FIRST ORDER</h2>
+                <div>
+                    <form>
+                        <input type="email" name="OK" id="RECEIVEEMAIL" placeholder="Email address">
+                        <input type="submit" value="OK">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="sub_faq.html">FAQ</a></li>
+                        <li><a href="sub_aboutus.html">About Us</a></li>
+                        <li><a href="sub_contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="sub_storeinformation.html">Store information</a></li>
+                        <li><a href="sub_refundinformation.html">Refund information</a></li>
+                        <li><a href="sub_shippinginformation.html">Shipping information</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Cabelas/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/cabelas/" target="_blank">Instagram</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p>
+                ©2024 Cabela's L.L.C. All rights reserved. | Huntsman Holdings, LLC
+            </p>
+            <a href="#detail_container" class="buttombutton">
+                <img src="images/arrow.png" alt="onTheBottom">
+            </a>
+            <div>
+                <span>call<a href="tel:">1-800-237-4444 </a>for assistance</span>
+                <span><img src="images/stripeimg.gif" alt="stripeimg"></span>
+                <span><img src="images/visaimg.png" alt="visaimg"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cabelai</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartPanel">
+        <span>
+            cart bg
+        </span>
+        <div>
+            <div>
+                <h2>
+                    <span>1</span>items in cart
+                </h2>
+                <div>
+                    <span class="closePanel">close</span>                     
+                    <input type="button" value="close" class="material-symbols-outlined">
+                </div>
+            </div>
+            <form action="checkout.html">
+                <ul>
+                    <li>
+                        <a href="detail_Pooltoys1.html">
+                            <ol>
+                                <li>cartitemimg</li>
+                                <li>
+                                    <h3>Pro shops big Buck inflatable Float</h3>
+                                    <span>option green/Brown</span>
+                                    <strong>delivery within 7 days</strong>
+                                </li>
+                            </ol>
+                        </a>
+                        <input type="button" value="delete" class="material-symbols-outlined">
+                    </li>
+                </ul>
+                <section>
+                    <h2>Total</h2>
+                    <span>$29.99</span>
+                </section>
+                <a href="checkout.html">checkout</a>
+            </form>
+        </div>
+    </div>
+    <div id="loginPanel">
+        <div>
+            <strong>NAME</strong>
+            <ul>
+                <li><a href="account_Registered_information.html">Dashboard</a></li>
+                <li><a href="account_Orders.html">Orders details</a></li>
+                <li><a href="account_Inquiry_history.html">Customer service</a></li>
+            </ul>
+            <input type="button" value="Log out">             
+        </div>
+    </div>
+    <header class="headeritem">
+        <div>
+            <h1>
+                <a href="index.html">Cabelai</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>HUNTING</h3>
+                        <ol>
+                            <li><a href="list_huntingclothing.html">HUNTING CLOTHING</a></li>
+                            <li><a href="list_knivestools.html">KNIVES & TOOLS</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>SHOOTING</h3>
+                        <ol>
+                            <li><a href="list_recreationalshooting.html">RECREATIONAL SHOOTING</a></li>
+                            <li><a href="list_shootingaccessories.html">SHOOTING ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>CAMPING</h3>
+                        <ol>
+                            <li><a href="list_campfurniture.html">CAMP FURNITURE</a></li>
+                            <li><a href="list_tentsandshelters.html">TENTS AND SHELTERS</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>BOATING</h3>
+                        <ol>
+                            <li><a href="list_water_pool_toys_page1.html">WATER SPORTS</a></li>
+                            <li><a href="list_kayaks_canoespage1.html">KAYAKS & CANOES</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <span>
+                    <strong>cart</strong>
+                    <button type="button" data-panel="cartPanel">+99</button>
+                </span>
+                <button type="button" class="material-symbols-outlined login_active" id="loginButton">person</button>
+                <button type="button" class="material-symbols-outlined" id="menuButton">Menu</button>
+                <div>
+                    
+                </div>
+            </div>
+            <section>
+                <div>
+                    <input type="button" class="material-symbols-outlined" value="close"></button>
+                    <ul>
+                        <li>
+                            <h3>HUNTING</h3>
+                            <ol>
+                                <li><a href="list_huntingclothing.html">HUNTING CLOTHING</a></li>
+                                <li><a href="list_knivestools.html">KNIVES & TOOLS</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>SHOOTING</h3>
+                            <ol>
+                                <li><a href="list_recreationalshooting.html">RECREATIONAL SHOOTING</a></li>
+                                <li><a href="list_shootingaccessories.html">SHOOTING ACCESSORIES</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>CAMPING</h3>
+                            <ol>
+                                <li><a href="list_campfurniture.html">CAMP FURNITURE</a></li>
+                                <li><a href="list_tentsandshelters.html">TENTS AND SHELTERS</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>BOATING</h3>
+                            <ol>
+                                <li><a href="list_water_pool_toys_page1.html">WATER SPORTS</a></li>
+                                <li><a href="list_kayaks_canoespage1.html">KAYAKS & CANOES</a></li>
+                            </ol>
+                        </li>
+                    </ul> 
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="account_container">
+        <div>
+            <aside>
+                <h2>LEEGWANGSEON</h2>
+                <div>
+                    <h3>Dashboard</h3>
+                    <ul>
+                        <li><a href="account_Registered_information.html">Member information</a></li>
+                        <li class="active"><a href="account_Address.html">Address</a></li>
+                        <li><a href="account_Edit_member.html">Payment management</a></li>
+                        <li><a href="account_withdrawal.html">Membership Withdrawal</a></li>
+                        <li><a href="account_Wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Order details</h3>
+                    <ul>
+                        <li><a href="account_Orders.html">Orders</a></li>
+                        <li><a href="account_Cancellation_details.html">Cancellation details</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="account_Inquiry_history.html">1:1 Inquiry History</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="account_Address_container">
+                <h2>Manage delivery address</h2>
+                <div>
+                    <h3>Shipping Address Book</h3>
+                    <div>
+                        <input type="button" value="Select as default shipping address">
+                        <input type="button" value="Add a new shipping address">
+                    </div>
+                    <ul>
+                        <li>
+                            <span><input type="checkbox" name="addrsselect" title=""></span>
+                            <b>address</b>
+                            <b>Resipient</b>
+                            <b>contact</b>
+                        </li>
+                        <li>
+                            <span><input type="checkbox" name="addrSelect"></span>
+                            <address>
+                                <mark class="active">[Default shipping address]</mark>
+                                <p>
+                                    (22180) 1002. 12 Dokjeong-iro. Michuhol-gu,incheon
+                                    (yonghyeon-dong)
+                                </p>
+                            </address>
+                            <span>
+                                LEEGWANGSEON
+                            </span>
+                            <strong>
+                                01077228006
+                            </strong>
+                        </li>
+                        <li>
+                            <span><input type="checkbox" name="addrSelect"></span>
+                            <address>
+                                <mark>[Default shipping address]</mark>
+                                <p>
+                                    (22180) 1002. 12 Dokjeong-iro. Michuhol-gu,incheon
+                                    (yonghyeon-dong)
+                                </p>
+                            </address>
+                            <span>
+                                LEEGWANGSEON
+                            </span>
+                            <strong>
+                                01077228006
+                            </strong>
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="button" value="delete">
+                        <input type="button" value="correction">
+                    </div>
+                </div>
+                <div class="address_popup">
+                    <div>
+                        <h2>Register delivery address</h2>
+                        <form action="account_Address.html">
+                            <label>To whom it may be given</label>
+                            <input type="text" placeholder="Name">
+                            <label>Where to receive</label>
+                            <input type="text" placeholder="Zip code">
+                            <input type="button" value="Zip code">
+                            <input type="text">
+                            <input type="text" placeholder="Detailed address">
+                            <label for="userPhoneF">phone number</label>
+                            <input type="text" id="userPhoneF" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                            <p>
+                                You can edit or delete your delivery address book at My Page > Personal Information
+                                > Delivery Address Management.
+                            </p>
+                            <div>
+                                <input type="reset" value="Cancellation">
+                                <input type="submit" value="Regist">
+                            </div>
+                            <!-- e.preventDefault js -->
+                        </form>
+                    </div>
+                </div>
+                <div class="regist_popup">
+                    <div>
+                        <form action="account_Address.html">
+                            <label>NAME</label>
+                            <input type="text" id="user_registName" placeholder="LEEGWANGSEON">
+                            <label>Phone number</label>
+                            <input type="text" id="user_registPhone" placeholder="010-7722-8006">
+                            <label>Address</label>
+                            <input type="text" placeholder="12345">
+                            <input type="button" value="Zip code">
+                            <input type="text"  placeholder="120 Subong-gil, Incheon Metropolitan City">
+                            <input type="text" placeholder="Detailed address">
+                            <div>
+                                <input type="submit" value="Cancellation">
+                                <input type="submit" value="Check.">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <section>
+            <div>
+                <h2>SIGN UP AND RECEIVE 10% OFF YOUR FIRST ORDER</h2>
+                <div>
+                    <form>
+                        <input type="email" name="OK" id="RECEIVEEMAIL" placeholder="Email address">
+                        <input type="submit" value="OK">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="sub_faq.html">FAQ</a></li>
+                        <li><a href="sub_aboutus.html">About Us</a></li>
+                        <li><a href="sub_contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="sub_storeinformation.html">Store information</a></li>
+                        <li><a href="sub_refundinformation.html">Refund information</a></li>
+                        <li><a href="sub_shippinginformation.html">Shipping information</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Cabelas/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/cabelas/" target="_blank">Instagram</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p>
+                ©2024 Cabela's L.L.C. All rights reserved. | Huntsman Holdings, LLC
+            </p>
+            <a href="#detail_container" class="buttombutton">
+                <img src="images/arrow.png" alt="onTheBottom">
+            </a>
+            <div>
+                <span>call<a href="tel:">1-800-237-4444 </a>for assistance</span>
+                <span><img src="images/stripeimg.gif" alt="stripeimg"></span>
+                <span><img src="images/visaimg.png" alt="visaimg"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

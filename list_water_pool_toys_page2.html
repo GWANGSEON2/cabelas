@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cabelai</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartPanel">
+        <span>
+            cart bg
+        </span>
+        <div>
+            <div>
+                <h2>
+                    <span>1</span>items in cart
+                </h2>
+                <div>
+                    <span class="closePanel">close</span>                     
+                    <input type="button" value="close" class="material-symbols-outlined">
+                </div>
+            </div>
+            <form action="checkout.html">
+                <ul>
+                    <li>
+                        <a href="detail_Pooltoys1.html">
+                            <ol>
+                                <li>cartitemimg</li>
+                                <li>
+                                    <h3>Pro shops big Buck inflatable Float</h3>
+                                    <span>option green/Brown</span>
+                                    <strong>delivery within 7 days</strong>
+                                </li>
+                            </ol>
+                        </a>
+                        <input type="button" value="delete" class="material-symbols-outlined">
+                    </li>
+                </ul>
+                <section>
+                    <h2>Total</h2>
+                    <span>$29.99</span>
+                </section>
+                <a href="checkout.html">checkout</a>
+            </form>
+        </div>
+    </div>
+    <div id="loginPanel">
+        <div>
+            <strong>NAME</strong>
+            <ul>
+                <li><a href="account_Registered_information.html">Dashboard</a></li>
+                <li><a href="account_Orders.html">Orders details</a></li>
+                <li><a href="account_Inquiry_history.html">Customer service</a></li>
+            </ul>
+            <input type="button" value="Log out">             
+        </div>
+    </div>
+    <header class="headeritem">
+        <div>
+            <h1>
+                <a href="index.html">Cabelai</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>HUNTING</h3>
+                        <ol>
+                            <li><a href="list_huntingclothing.html">HUNTING CLOTHING</a></li>
+                            <li><a href="list_knivestools.html">KNIVES & TOOLS</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>SHOOTING</h3>
+                        <ol>
+                            <li><a href="list_recreationalshooting.html">RECREATIONAL SHOOTING</a></li>
+                            <li><a href="list_shootingaccessories.html">SHOOTING ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>CAMPING</h3>
+                        <ol>
+                            <li><a href="list_campfurniture.html">CAMP FURNITURE</a></li>
+                            <li><a href="list_tentsandshelters.html">TENTS AND SHELTERS</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>BOATING</h3>
+                        <ol>
+                            <li><a href="list_water_pool_toys_page1.html">WATER SPORTS</a></li>
+                            <li><a href="list_kayaks_canoespage1.html">KAYAKS & CANOES</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <span>
+                    <strong>cart</strong>
+                    <button type="button" data-panel="cartPanel">+99</button>
+                </span>
+                <button type="button" class="material-symbols-outlined login_active" id="loginButton">person</button>
+                <button type="button" class="material-symbols-outlined" id="menuButton">Menu</button>
+            </div>
+            <section>
+                <div>
+                    <input type="button" class="material-symbols-outlined" value="close">
+                    <ul>
+                        <li>
+                            <h3>HUNTING</h3>
+                            <ol>
+                                <li><a href="list_huntingclothing.html">HUNTING CLOTHING</a></li>
+                                <li><a href="list_knivestools.html">KNIVES & TOOLS</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>SHOOTING</h3>
+                            <ol>
+                                <li><a href="list_recreationalshooting.html">RECREATIONAL SHOOTING</a></li>
+                                <li><a href="list_shootingaccessories.html">SHOOTING ACCESSORIES</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>CAMPING</h3>
+                            <ol>
+                                <li><a href="list_campfurniture.html">CAMP FURNITURE</a></li>
+                                <li><a href="list_tentsandshelters.html">TENTS AND SHELTERS</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>BOATING</h3>
+                            <ol>
+                                <li><a href="list_water_pool_toys_page1.html">WATER SPORTS</a></li>
+                                <li><a href="list_kayaks_canoespage1.html">KAYAKS & CANOES</a></li>
+                            </ol>
+                        </li>
+                    </ul> 
+                </div>
+            </section>
+        </div>
+    </header>
+    <div id="list_container" class="list_container">
+        <section>
+            <h2>WATER SPORTS</h2>
+            <p id="List_WomensHuntingClothingpage">When you need help getting out on the water and enjoying yourself, look no further than Bass Pro Shops. Keep your boat secure when you transport </p>
+            <ul>
+                <li  class="active">
+                    <a href="list_water_pool_toys_page1.html">Water & Pool Toys</a>
+                </li>
+                <li>
+                    <a href="list_towables_skispage1.html">Water & Pool Toys</a>
+                </li>
+            </ul>
+        </section>
+        <div>
+            <div>
+                <form>
+                    <span>
+                        <input type="submit" value="search" class="material-symbols-outlined">
+                        <input type="search" placeholder="Search by keyword">
+                    </span>
+                    <span>
+                        <strong>Sort by:</strong>
+                        <select>
+                            <option>Latest</option>
+                            <option>in the past</option>
+                        </select>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div>
+            <aside>
+                <form>
+                    <fieldset>
+                        <legend>Average Ratings</legend>                        
+                        <input type="radio" id="Average5" name="average-rating" value="5">
+                        <label for="Average5">star5</label>                  
+                        <input type="radio" id="Average4" name="average-rating" value="4">
+                        <label for="Average4">star4</label>                   
+                        <input type="radio" id="Average3" name="average-rating" value="3">
+                        <label for="Average3">star3</label>                        
+                    </fieldset>                    
+                    <fieldset>
+                        <legend>Price</legend>                    
+                        <input type="radio" id="price1" name="price" value="99-or-less">
+                        <label for="price1">$99 or less</label>                       
+                        <input type="radio" id="price2" name="price" value="100-250">
+                        <label for="price2">$100 ~ $250</label>       
+                        <input type="radio" id="price3" name="price" value="250-400">
+                        <label for="price3">$250 ~ $400</label>
+                        <input type="radio" id="price4" name="price" value="400-or-more">
+                        <label for="price4">$400 or more</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Current Offers</legend>
+                        <input type="radio" id="Current1" name="current-offers" value="sale">
+                        <label for="Current1">Sale</label>
+                        <input type="radio" id="Current2" name="current-offers" value="new">
+                        <label for="Current2">New</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Availability</legend>
+                        <input type="radio" id="Avail1" name="availability" value="in-stock">
+                        <label for="Avail1">In Stock</label>
+                        <input type="radio" id="Avail2" name="availability" value="limited-stock">
+                        <label for="Avail2">Limited Stock</label>
+                        <input type="radio" id="Avail3" name="availability" value="out-of-stock">
+                        <label for="Avail3">Out of Stock</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="button" value="Reset filter">
+                        <input type="button" value="Apply filter">
+                    </fieldset>
+                </form>
+            </aside>
+            <section>
+                <div>
+                    <div>
+                        <article>
+                            <h2>For all day, every day</h2>
+                            <p>Discover our organic clothing specially designed to feel good when you move in them. Comfortable minimalist t-shirts and ponchos made with natural materials and hand crafted mandalas to enhance your lifestyle.</p>
+                        </article>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="images/Toys16.png" alt="listimg1">
+                                    <figcaption>
+                                        $499.99
+                                    </figcaption>
+                                </figure>
+                                <div>
+                                    <h3>​Advanced Elements AdvancedFrame</h3>
+                                    <p>
+                                        Looks and paddles similar to a rigid
+                                        hard-shell kayak with the portability
+                                        of an inflatable
+                                    </p>
+                                    <span>$499.99</span>
+                                    <a href="detail_Pooltoys16.html">Read more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/Toys17.png" alt="listimg2">
+                                    <figcaption>
+                                        $899.99
+                                    </figcaption>
+                                </figure>
+                                <div>
+                                    <h3>Advanced Elements AirVolution Sport</h3>
+                                    <p>
+                                        High-pressure drop-stitch
+                                        construction for extreme rigidity
+                                        Hull speed comparable
+                                        to a hard-shell kayak
+                                    </p>
+                                    <span>$899.99</span>
+                                    <a href="detail_Pooltoys17.html">Read more</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="images/Toys18.png" alt="listimg3">
+                                <figcaption>
+                                    $39.99
+                                </figcaption>
+                            </figure>
+                            <div>
+                                <h3>Gelbee Stinger Blaster Gel BB Gun</h3>
+                                <p>
+                                    5.0 out of 5 stars, average rating
+                                    value. Read 3 Reviews. Same
+                                    page link.
+                                </p>
+                                <span>$39.99</span>
+                                <a href="detail_Pooltoys18.html">Read more</a>
+                            </div>
+                            <span>New</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <h3>FREE SHIPPING DISCOUNT</h3>
+                        <p>
+                            Free EU Shipping on all orders over 
+                            $230. Get your 10% off your first
+                            order when you register to our
+                            newsletter.
+                        </p>
+                        <strong>10%Discont</strong>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/Toys20.png" alt="listimg5">
+                            <figcaption>
+                                $979.99
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h3>Advanced Elements PackLite+ Inflatable</h3>
+                            <p>
+                                Ever wished you had a packraft
+                                that's light and compact enough
+                                to carry to far-off waterways
+                            </p>
+                            <span>$979.99</span>
+                            <a href="detail_Pooltoys20.html">Read more</a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/Toys21.png" alt="listimg6">
+                            <figcaption>
+                                $134.9
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h3>Advanced Elements PackLite+ XL</h3>
+                            <p>
+                                Ever wished you had a packraft
+                                that's durable, spacious, and
+                                versatile enough to carry to far-off
+                                waterways
+                            </p>
+                            <span>$134.9</span>
+                            <a href="detail_Pooltoys21.html">Read more</a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/Toys22.png" alt="listimg7">
+                            <figcaption>
+                                $899.99
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h3>Advanced Elements StraitEdge</h3>
+                            <p>
+                                Heavy-duty PVC Tarpaulin
+                                construction Extremely
+                                puncture-resistant Built-in 
+                                ribs improving tracking
+                            </p>
+                            <span>$899.99</span>
+                            <a href="detail_Pooltoys22.html">Read more</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <ul>
+            <li><input type="button" value="keyboard_double_arrow_left" class="material-symbols-outlined"></li>
+            <li><a href="list_water_pool_toys_page1.html">1</a></li>
+            <li><a href="list_water_pool_toys_page2.html" class="pagebutton">2</a></li>
+            <li><input type="button" value="keyboard_double_arrow_right" class="material-symbols-outlined"></li>
+        </ul>
+    </div>
+    <footer id="footer">
+        <section>
+            <div>
+                <h2>SIGN UP AND RECEIVE 10% OFF YOUR FIRST ORDER</h2>
+                <div>
+                    <form>
+                        <input type="email" name="OK" id="receiveemail" placeholder="Email address">
+                        <input type="submit" value="OK">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="sub_faq.html">FAQ</a></li>
+                        <li><a href="sub_aboutus.html">About Us</a></li>
+                        <li><a href="sub_contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="sub_storeinformation.html">Store information</a></li>
+                        <li><a href="sub_refundinformation.html">Refund information</a></li>
+                        <li><a href="sub_shippinginformation.html">Shipping information</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Cabelas/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/cabelas/" target="_blank">Instagram</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p>
+                ©2024 Cabela's L.L.C. All rights reserved. | Huntsman Holdings, LLC
+            </p>
+            <a href="#list_container" class="buttombutton">
+                <img src="images/arrow.png" alt="onTheBottom">
+            </a>
+            <div>
+                <span>call<a href="tel:">1-800-237-4444 </a>for assistance</span>
+                <span><img src="images/stripeimg.gif" alt="stripeimg"></span>
+                <span><img src="images/visaimg.png" alt="visaimg"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

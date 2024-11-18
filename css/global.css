@@ -1,0 +1,1793 @@
+#loginPanel,
+#cartPanel,
+header nav,
+header > div div:last-of-type,
+.index_container div:nth-of-type(1) h2,
+.index_container > p,
+#index_container > div:nth-of-type(2) > p,
+.index_container > div:nth-of-type(3) > div ul li p,
+.index_container > div:nth-of-type(3) > div ul li div strong,
+.index_container > div:nth-of-type(4) ul li input[type='button'],
+.index_container > div:nth-of-type(4) > div div,
+.index_container > div:nth-of-type(5) blockquote,
+.index_container > div:nth-of-type(5) div,
+.index_container figure,
+.index_container > div:last-of-type div:first-of-type strong,
+.index_container > div:last-of-type div:first-of-type ul,
+.index_container > div:last-of-type > div:last-of-type ul,
+.list_container,
+.detail_container,
+.review_container > div section,
+.review_container > div section div textarea,
+.login_container,
+.login_signup_container,
+.loginfind_container,
+.login_newId_container,
+.checkout_container,
+.checkout_completed,
+.account_container,
+.faq_container,
+.about_container,
+.contact_container,
+.store_container,
+.refund_container,
+.shiping_container,
+footer{
+    font-family: 'Poppins';
+}
+
+header  h1 a,
+.index_container div:nth-of-type(1) h2 mark,
+.index_container > div:nth-of-type(3) > div ul li div span,
+.index_container > div:last-of-type div:first-of-type h2{
+    font-family: 'Dancing Script';
+}
+html,
+body{
+  scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ol,
+li{
+    list-style: none;
+}
+.scrollbg {
+  background-color: white;
+}
+.hg{
+  height: 150px;
+}
+.tabPage {
+  display: none;
+}
+.tabPage.activated {
+  display: block;
+}
+.activated{
+  display: block;
+}
+.no-vertical-scroll {
+  overflow: hidden;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+}
+@media screen and (max-width:767px){  
+  header div,
+  #loginPanel,
+  .index_container > p
+  .index_container  > div:nth-of-type(2),
+  .index_container > div:nth-of-type(3) div,
+  .index_container > div:nth-of-type(4) > div,
+  .index_container figure,
+  .index_container > div:nth-of-type(5),
+  .index_container > div:nth-of-type(6) > div,
+  .index_container > div:last-of-type,
+  .list_container > div:nth-of-type(1),
+  .list_container > div:nth-of-type(2),
+  .list_container > ul,
+  .detail_container,
+  footer{
+    max-width:767px;
+    margin: 0 auto;
+  }
+  #cartPanel{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index:1000;
+    display: none;
+    background-color: rgba(0,0, 0, 0.3);
+  }
+  #cartPanel >*{
+    float: left;
+  }
+  #cartPanel::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > span{
+    display:none;
+    width: 50%;
+    height: 100%;
+    text-indent: -9999px;
+  }
+  #cartPanel > div{
+    width:100% ;
+    height: 100%;
+    background-color: white;
+    padding:8% 3% 2.40%;
+    box-sizing: border-box;
+  }
+  #cartPanel > div div >*{
+    float: left;
+  }
+  #cartPanel > div div::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div > div{
+    padding-bottom:6%;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  #cartPanel > div div h2{
+    width:70%;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div div h2 span{
+    padding-right: 2%;
+  }
+  #cartPanel > div div > div{
+    width:30%;
+    cursor: pointer;
+  }
+  #cartPanel > div div > div span{
+    font-size: 18px;
+    width:70%;
+    padding-top: 2%;
+    text-align:right;
+    padding-top: 4px;
+  }
+  #cartPanel > div div > div input[type='button']{ 
+    background: none;
+    border: none;
+    width:30%;
+    text-align:left;
+    cursor: pointer;
+  }
+  #cartPanel > div form{
+    height:100%;
+  }
+  #cartPanel > div form ul{
+    height:60%;
+    overflow: auto;
+    margin-bottom: 20%;
+  }
+  #cartPanel > div form ul > li{
+    padding:5% 0 2.77%;
+    border-bottom: 1px solid #b9b9b9;
+    position: relative;
+    margin-bottom: 4%;
+  }
+  #cartPanel > div form ul li a ol li{
+    float: left;
+  }
+  #cartPanel > div form ul li a ol::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div form ul li a ol li:first-of-type{
+    width:17%;
+    height: 85px;
+    text-indent: -9999px;
+    background: url('../images/cartitem.png')center center / 100% no-repeat;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type{
+    padding-left: 3%;
+    width: 65%;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-bottom:8px;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type span{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 8px;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type strong{
+    font-size: 13px;
+    font-weight: 300;
+    color: #b4b4b4;
+  }
+  #cartPanel > div form ul li > input{
+    position: absolute;
+    top:15%;
+    right: 3%;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #cartPanel > div form section{
+    height: 10%;
+  }
+  #cartPanel > div form section::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div form section h2{
+    width: 50%;
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div form section span{
+    width:50%;
+    text-align: right;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div form > a{
+    display: block;
+    text-align: center; 
+    padding: 20px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: #000000;
+    font-weight: 500;
+    color: white;
+    font-size: 23px;
+    transition-duration: 0.5s;
+  }
+  #loginPanel{
+    position: fixed;
+    z-index: 300;
+    top: 10.5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 298px;
+    box-sizing: border-box;
+  }
+   #loginPanel div{
+    position: absolute;
+    right:19%;
+    width: 60%;
+    padding: 25px 0 25px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+   }
+   #loginPanel strong{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    display: block;
+    margin-bottom: 45px;
+   }
+   #loginPanel  ul li:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  #loginPanel  ul li a{
+    color: #63686c;
+    font-size: 14px;
+    font-weight: 500;
+    
+   }
+   #loginPanel ul li:last-of-type{
+    margin-bottom: 65px;
+   }
+   #loginPanel input[type='button'] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);    
+    z-index: 200;
+    transition-duration: 0.6s;
+  }
+  header > div div > button.loginActive{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(63, 62, 62);
+    color: rgb(255, 255, 255);
+  }
+  header > div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 100px;
+    transition: height 0.3s ease;
+  }
+  header >*{
+    float: left;
+  }
+  header::after{
+    content: ''; display: block; clear: both;
+  }
+  header > div h1{
+    width: 7.99%;
+    min-width:132px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  header h1 a{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  header nav{
+    z-index: 400;
+    width: 100%;
+    padding: 25%;
+    text-align:right;
+    display: none;
+  }
+  header nav ul{
+    padding-left: 40%;
+    width: 25%;
+    min-height:80px;
+  }
+  header nav ul li{
+    cursor: pointer;
+  }
+
+  header nav ul li h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fefefe;
+    text-align: right;
+    padding-right: 25px;
+    background: url('../images/arrowbutton.png') right 2% center no-repeat;
+  }
+  header nav ul li:hover h3{
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+  }
+  header nav ul > li:hover{
+    padding-bottom: 30px;
+  }
+  header nav ul li ol li{
+    font-size:15px;
+    font-weight: 400;
+    transition-duration: 0.6s;
+    opacity: 0;
+  }
+  header nav ul li:hover ol li{
+    margin-top: 15px;
+    opacity: 100;
+  }
+  header nav ul li ol li a{
+    color: #c2c7d1;
+  }
+  header nav ul li ol li a:hover{
+    color: #c2b9b9;
+    transition-duration: 0.3s;
+  }
+  header > div > div:last-of-type{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translate(0,-40%);
+  }
+  header div div span strong{
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: none;
+  }
+  header div div button{
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 36px;
+    cursor: pointer;
+    background-color: white;
+  }
+  header div div span button{
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #434343;
+  }
+  header div div > button{
+    vertical-align: middle;
+    font-size:22px;
+    font-weight: 400;
+    color: #434343;
+    margin-left: 10px;
+    text-align: center;
+  }
+  header div div > button:nth-of-type(2){
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    background-color: white
+  }
+  header.scrollbg div h1 a,
+  header.scrollbg div nav ul li h3,
+  header.scrollbg div div span strong{
+    color: black;
+  }
+  header.scrollbg div nav ul li:hover h3{
+    border-bottom: 1px solid black;
+  }
+  header.scrollbg div div button{
+    background-color: black;
+    color: white;
+  }
+  .headeritem{
+    background-color: white;
+  }
+  .headeritem h1 a{
+    color: black;
+  }
+  .headeritem nav h3{
+    color: black;
+  }
+  .headeritem div div span strong{
+    color: black;
+  }
+  .headeritem div div button{
+    background-color: black;
+    color: white;
+  }
+  .headeritem div div > button:nth-of-type(2){
+    background-color: black;
+    color: white;
+  }
+  header div > section{
+    background-color: rgba(133, 132, 132, 0.301);
+    z-index:1001;
+    position: fixed;
+    width: 100vw;
+    height:1000vw;
+    display: none;
+  }
+  header div > section div{
+    width:100%;
+    height: 100%;
+    float: right;
+    text-align: right;
+    padding: 38px 4% 0 0;
+    background-color: rgb(255, 255, 255);
+  }
+  header div > section div input[type='button']{
+    background: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 60px;
+    text-indent: -9999;
+  }
+  header div > section div ul:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  header div > section div ul li{
+    padding-right: 2%;
+  }
+  header div > section div ul li h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    padding-right:9%;
+    cursor: pointer;
+    background: url('../images/tablet_arrowbuttom.png')right center no-repeat;
+  }
+  header div > section div ul li ol{
+    height: 0;
+    opacity: 0;
+    display: none;
+    transition-duration: 0.5s;
+  }
+  header div > section div ul li ol li{
+    padding-top: 16px;
+    transition-duration: 0.5s;
+  }
+  header div > section div ul li ol li a{
+    font-size: 16px;
+    color: #ababab;
+  }
+  header div > section div ul li h3.active{
+    background: url('../images/tablet_arrowtop.png')right center no-repeat;
+  }
+  header div > section div ul li ol.active{
+    height:55px;
+    opacity: 100;
+    display: block;
+    transition-duration: 0.5s;
+  }
+  footer{
+    padding: 170px 2% 155px;
+    border-top: 1px solid black;
+    margin-top: 105px;
+  }
+
+  footer section > div:first-of-type{
+    width:100%;
+  }
+  footer section > div:first-of-type h2{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+    max-width: 698px;
+  }
+  footer section > div:first-of-type div{
+    width:100%;
+    border-bottom: 1px solid black;
+  }
+ 
+  footer section > div:first-of-type div::after{
+    content: ''; display: block; clear: both;
+  }
+  footer section > div:first-of-type div input[type='email']{
+    padding: 20px 0 20px;
+    font-size: 16px;
+    color:black;
+    background: none;
+    border: none;
+    width:75% ;
+  }
+  footer section > div:first-of-type div input[type='email']::placeholder{
+    font-size: 16px;
+    font-weight: 600;
+    color: #d0d0d0;
+  }
+  footer section > div:first-of-type div input[type='submit']{
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    width:20%;
+  }
+  footer section > div:last-of-type{
+    width: 100%;
+    padding-top:50px;
+  }
+  footer section > div:last-of-type div{
+    width:100%;
+    text-align:left;
+    height: 0px;
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div.active{
+    height: auto;
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div.active h3{
+    margin-bottom: 20px;
+    background: url('../images/tablet_arrowtop.png')right 3% center no-repeat;
+  }
+  footer section > div:last-of-type div.active ul{
+    height: auto;
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div.active ul li{
+    height:15px;
+    opacity: 100;
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div.active ul li a{
+    display: block;
+  }
+  footer section > div:last-of-type div ul li{
+    height: 0px;
+    opacity: 0;
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div{
+    margin-bottom: 65px;
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: url('../images/tablet_arrowbuttom.png')right 3% center no-repeat;
+  }
+  footer section > div:last-of-type div ul{
+    transition-duration: 0.5s;
+  }
+  footer section > div:last-of-type div ul li:not(:last-of-type){
+    margin-bottom: 25px;
+  }
+  footer section > div:last-of-type div ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    display: none;
+  }
+  footer >div{
+    position: relative;
+    padding:40px 0;
+  }
+  footer >div p{
+    width:100%;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    margin:0 5% 25px 0;
+  }
+  footer >div > a{
+    position: absolute;
+    bottom: -32%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 70px; height: 70px; border: 1px solid #cecece;
+    display: block;
+    border-radius: 50px;
+  }
+  footer >div > a img{
+    width: 70px; height: 100px;
+  }
+  footer > div div{
+    width:100%;
+    text-align:left;
+  }
+  footer > div div span:nth-of-type(1){
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer > div div span:nth-of-type(2){
+    margin-right: 3%;
+  }
+  footer > div div span{
+    text-align: right;
+    display: inline-block;
+  }
+  footer > div div span a{
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    width: 100%;
+  }
+  footer > div div span:not(:first-of-type){
+    vertical-align: sub;
+    width: 38px;
+    height: 10px;
+    margin-left: 3%;
+    text-indent: -9999px;
+  }
+   
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {  
+  header div,
+  #loginPanel,
+  .index_container  > div:nth-of-type(2),
+  .index_container > div:nth-of-type(3) div,
+  .index_container > div:nth-of-type(4) > div,
+  .index_container figure,
+  .index_container > div:nth-of-type(5),
+  .index_container > div:nth-of-type(6) > div,
+  .index_container > div:last-of-type,
+  .list_container > div:nth-of-type(1),
+  .list_container > div:nth-of-type(2),
+  .list_container > ul,
+  .detail_container,
+  footer{
+    max-width:1278px;
+    margin: 0 auto;
+  }
+  #cartPanel{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index:1000;
+    display: none;
+    background-color: rgba(0,0, 0, 0.3);
+  }
+  #cartPanel >*{
+    float: left;
+  }
+  #cartPanel::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > span{
+    display: block;
+    width: 50%;
+    height: 100%;
+    text-indent: -9999px;
+  }
+  #cartPanel > div{
+    width:50% ;
+    height: 100%;
+    background-color: white;
+    padding: 4% 2% 2.40%;
+    box-sizing: border-box;
+  }
+  #cartPanel > div div >*{
+    float: left;
+  }
+  #cartPanel > div div::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div > div{
+    padding-bottom:6%;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  #cartPanel > div div h2{
+    width:70%;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div div h2 span{
+    padding-right: 2%;
+  }
+  #cartPanel > div div > div{
+    width:30%;
+    cursor: pointer;
+  }
+  #cartPanel > div div > div span{
+    font-size: 18px;
+    width:75%;
+    padding-top: 2%;
+    text-align:right;
+  }
+  #cartPanel > div div > div input[type='button']{ 
+    background: none;
+    border: none;
+    width:25%;
+    text-align:left;
+    cursor: pointer;
+  }
+  #cartPanel > div form{
+    height:100%;
+  }
+  #cartPanel > div form ul{
+    height:60%;
+    overflow: auto;
+    margin-bottom: 20%;
+  }
+  #cartPanel > div form ul > li{
+    padding:5% 0 2.77%;
+    border-bottom: 1px solid #b9b9b9;
+    position: relative;
+    margin-bottom: 4%;
+  }
+  #cartPanel > div form ul li a ol li{
+    float: left;
+  }
+  #cartPanel > div form ul li a ol::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div form ul li a ol li:first-of-type{
+    width:17%;
+    height: 85px;
+    text-indent: -9999px;
+    background: url('../images/cartitem.png')center center / 100% no-repeat;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type{
+    padding-left: 3%;
+    width: 65%;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-bottom:8px;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type span{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 8px;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type strong{
+    font-size: 13px;
+    font-weight: 300;
+    color: #b4b4b4;
+  }
+  #cartPanel > div form ul li > input{
+    position: absolute;
+    top:15%;
+    right: 3%;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #cartPanel > div form section{
+    height: 10%;
+  }
+  #cartPanel > div form section::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div form section h2{
+    width: 50%;
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div form section span{
+    width:50%;
+    text-align: right;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div form > a{
+    display: block;
+    text-align: center; 
+    padding: 20px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: #000000;
+    font-weight: 500;
+    color: white;
+    font-size: 23px;
+    transition-duration: 0.5s;
+  }
+  #loginPanel{
+    position: fixed;
+    z-index: 300;
+    top: 10.5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 298px;
+    box-sizing: border-box;
+  }
+   #loginPanel div{
+    position: absolute;
+    right:7.5%;
+    width: 25%;
+    padding: 25px 0 25px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+   }
+   #loginPanel strong{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    display: block;
+    margin-bottom: 45px;
+   }
+   #loginPanel  ul li:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  #loginPanel  ul li a{
+    color: #63686c;
+    font-size: 14px;
+    font-weight: 500;
+    
+   }
+   #loginPanel ul li:last-of-type{
+    margin-bottom: 65px;
+   }
+   #loginPanel input[type='button'] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);    
+    z-index: 200;
+    transition-duration: 0.6s;
+  }
+  header > div div > button.loginActive{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(63, 62, 62);
+    color: rgb(255, 255, 255);
+  }
+  header > div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 100px;
+    transition: height 0.3s ease;
+  }
+  header >*{
+    float: left;
+  }
+  header::after{
+    content: ''; display: block; clear: both;
+  }
+  header > div h1{
+    width: 7.99%;
+    min-width:132px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  header h1 a{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  header nav{
+    z-index: 400;
+    width: 100%;
+    padding: 25%;
+    text-align:right;
+    display: none;
+  }
+  header nav ul{
+    padding-left: 40%;
+    width: 25%;
+    min-height:80px;
+  }
+  header nav ul li{
+    cursor: pointer;
+  }
+
+  header nav ul li h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fefefe;
+    text-align: right;
+    padding-right: 25px;
+    background: url('../images/arrowbutton.png') right 2% center no-repeat;
+  }
+  header nav ul li:hover h3{
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+  }
+  header nav ul > li:hover{
+    padding-bottom: 30px;
+  }
+  header nav ul li ol li{
+    font-size:15px;
+    font-weight: 400;
+    transition-duration: 0.6s;
+    opacity: 0;
+  }
+  header nav ul li:hover ol li{
+    margin-top: 15px;
+    opacity: 100;
+  }
+  header nav ul li ol li a{
+    color: #c2c7d1;
+  }
+  header nav ul li ol li a:hover{
+    color: #c2b9b9;
+    transition-duration: 0.3s;
+  }
+  header > div > div:last-of-type{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translate(0,-40%);
+  }
+  header div div span strong{
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: none;
+  }
+  header div div button{
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 36px;
+    cursor: pointer;
+    background-color: white;
+  }
+  header div div span button{
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #434343;
+  }
+  header div div > button{
+    vertical-align: middle;
+    font-size:22px;
+    font-weight: 400;
+    color: #434343;
+    margin-left: 10px;
+    text-align: center;
+  }
+  header div div > button:nth-of-type(2){
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    background-color: white
+  }
+  header.scrollbg div h1 a,
+  header.scrollbg div nav ul li h3,
+  header.scrollbg div div span strong{
+    color: black;
+  }
+  header.scrollbg div nav ul li:hover h3{
+    border-bottom: 1px solid black;
+  }
+  header.scrollbg div div button{
+    background-color: black;
+    color: white;
+  }
+  .headeritem{
+    background-color: white;
+  }
+  .headeritem h1 a{
+    color: black;
+  }
+  .headeritem nav h3{
+    color: black;
+  }
+  .headeritem div div span strong{
+    color: black;
+  }
+  .headeritem div div button{
+    background-color: black;
+    color: white;
+  }
+  .headeritem div div > button:nth-of-type(2){
+    background-color: black;
+    color: white;
+  }
+  header div > section{
+    background-color: rgba(133, 132, 132, 0.301);
+    z-index:1001;
+    position: fixed;
+    width: 100vw;
+    height:1000vw;
+    display: none;
+  }
+  header div > section div{
+    width: 40%;
+    height: 100%;
+    float: right;
+    text-align: right;
+    padding: 38px 4% 0 0;
+    background-color: rgb(255, 255, 255);
+  }
+  header div > section div input[type='button']{
+    background: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 60px;
+    text-indent: -9999;
+  }
+  header div > section div ul:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  header div > section div ul li{
+    padding-right: 2%;
+  }
+  header div > section div ul li h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    padding-right:9%;
+    cursor: pointer;
+    background: url('../images/tablet_arrowbuttom.png')right center no-repeat;
+  }
+  header div > section div ul li ol{
+    height: 0;
+    opacity: 0;
+    display: none;
+    transition-duration: 0.5s;
+  }
+  header div > section div ul li ol li{
+    padding-top: 16px;
+    transition-duration: 0.5s;
+  }
+  header div > section div ul li ol li a{
+    font-size: 16px;
+    color: #ababab;
+  }
+  header div > section div ul li h3.active{
+    background: url('../images/tablet_arrowtop.png')right center no-repeat;
+  }
+  header div > section div ul li ol.active{
+    height:55px;
+    opacity: 100;
+    display: block;
+    transition-duration: 0.5s;
+  }
+  footer{
+    padding: 170px 2% 155px;
+    border-top: 1px solid black;
+    margin-top: 105px;
+  }
+
+  footer section > div:first-of-type{
+    width:100%;
+  }
+  footer section > div:first-of-type h2{
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 65px;
+    max-width: 698px;
+  }
+  footer section > div:first-of-type div{
+    min-width: 480px;
+    width:67.97%;
+    border-bottom: 1px solid black;
+  }
+ 
+  footer section > div:first-of-type div::after{
+    content: ''; display: block; clear: both;
+  }
+  footer section > div:first-of-type div input[type='email']{
+    padding: 20px 0 20px;
+    font-size: 18px;
+    color:black;
+    background: none;
+    border: none;
+    width:90% ;
+  }
+  footer section > div:first-of-type div input[type='email']::placeholder{
+    font-size: 22px;
+    font-weight: 600;
+    color: #d0d0d0;
+  }
+  footer section > div:first-of-type div input[type='submit']{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 9%;
+  }
+  footer section > div:last-of-type{
+    width: 100%;
+    padding-top: 78px;
+  }
+  footer section > div:last-of-type div{
+    float: left;
+  }
+  footer section > div:last-of-type::after{
+    content: ''; display: block; clear: both;
+  }
+  footer section > div:last-of-type div{
+    width: 33.33%;
+    text-align:left;
+  }
+  footer section > div:last-of-type div h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 70px;
+  }
+  footer section > div:last-of-type div ul li:not(:last-of-type){
+    margin-bottom: 25px;
+  }
+  footer section > div:last-of-type div ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+  }
+  footer section > div:last-of-type div ul li a:hover{
+    text-decoration: underline;
+  }
+  footer >div{
+    position: relative;
+    padding:100px 0;
+  }
+  footer >div p{
+    width: 45%;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    margin-right: 5%;
+  }
+  footer > div >*{
+    float: left;
+  }
+  footer >div:after{
+    content: ''; display: block; clear: both;
+  }
+  footer >div > a{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 70px; height: 70px; border: 1px solid #cecece;
+    display: block;
+    border-radius: 50px;
+  }
+  footer >div > a img{
+    width: 70px; height: 100px;
+  }
+  footer > div div{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+  }
+  footer > div div span{
+    text-align: right;
+    display: inline-block;
+  }
+  footer > div div a:hover{
+    text-decoration: underline;
+  }
+  footer > div div span a{
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+  }
+  footer > div div span:not(:first-of-type){
+    vertical-align: sub;
+    width: 38px;
+    height: 10px;
+    margin-left: 3%;
+    text-indent: -9999px;
+  }
+   
+  
+}
+/* tablet */
+@media screen and (min-width: 1280px){  
+  header div,
+  #loginPanel,
+  .index_container  > div:nth-of-type(2),
+  .index_container > div:nth-of-type(3) div,
+  .index_container > div:nth-of-type(4) > div,
+  .index_container figure,
+  .index_container > div:nth-of-type(5),
+  .index_container > div:nth-of-type(6) > div,
+  .index_container > div:last-of-type,
+  .list_container > div:nth-of-type(1),
+  .list_container > div:nth-of-type(2),
+  .list_container > ul,
+  .detail_container,
+  footer{
+    max-width: 1752px;
+    margin: 0 auto;
+  }
+  #cartPanel{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index:1000;
+    display: none;
+    background-color: rgba(0,0, 0, 0.3);
+  }
+  #cartPanel >*{
+    float: left;
+  }
+  #cartPanel::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > span{
+    display: block;
+    width: 70%;
+    height: 100%;
+    text-indent: -9999px;
+  }
+  #cartPanel > div{
+    width:30% ;
+    height: 100%;
+    background-color: white;
+    padding: 4% 2% 2.40%;
+    box-sizing: border-box;
+  }
+  #cartPanel > div div >*{
+    float: left;
+  }
+  #cartPanel > div div::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div > div{
+    padding-bottom:6%;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  #cartPanel > div div h2{
+    width:70%;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div div h2 span{
+    padding-right: 2%;
+  }
+  #cartPanel > div div > div{
+    width:30%;
+    cursor: pointer;
+  }
+  #cartPanel > div div > div span{
+    font-size: 18px;
+    width:75%;
+    padding-top: 2%;
+    text-align:right;
+  }
+  #cartPanel > div div > div input[type='button']{ 
+    background: none;
+    border: none;
+    width:25%;
+    text-align:left;
+    cursor: pointer;
+  }
+  #cartPanel > div form{
+    height:85%;
+  }
+  #cartPanel > div form ul{
+    height:75%;
+    overflow: auto;
+  }
+  #cartPanel > div form ul > li{
+    padding:5% 0 2.77%;
+    border-bottom: 1px solid #b9b9b9;
+    position: relative;
+    margin-bottom: 4%;
+  }
+  #cartPanel > div form ul li a ol li{
+    float: left;
+  }
+  #cartPanel > div form ul li a ol::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div form ul li a ol li:first-of-type{
+    width:17%;
+    height: 85px;
+    text-indent: -9999px;
+    background: url('../images/cartitem.png')center center / 100% no-repeat;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type{
+    padding-left: 3%;
+    width: 65%;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-bottom:8px;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type span{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 8px;
+  }
+  #cartPanel > div form ul li a ol li:last-of-type strong{
+    font-size: 13px;
+    font-weight: 300;
+    color: #b4b4b4;
+  }
+  #cartPanel > div form ul li > input{
+    position: absolute;
+    top:15%;
+    right: 3%;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #cartPanel > div form section{
+    margin: 18% 0 10% 0;
+  }
+  #cartPanel > div form section::after{
+    content: ''; display: block; clear: both;
+  }
+  #cartPanel > div form section h2{
+    width: 50%;
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div form section span{
+    width:50%;
+    text-align: right;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+  }
+  #cartPanel > div form > a{
+    display: block;
+    text-align: center; 
+    padding: 20px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: #000000;
+    font-weight: 500;
+    color: white;
+    font-size: 23px;
+    transition-duration: 0.5s;
+  }
+  #cartPanel > div form > a:hover{
+    background-color: #666666;
+  }
+  #loginPanel{
+    position: fixed;
+    z-index: 900;
+    top: 10.5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 298px;
+    box-sizing: border-box;
+  }
+   #loginPanel div{
+    position: absolute;
+    right:2%;
+    width: 12%;
+    padding: 25px 0 25px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+   }
+   #loginPanel strong{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    display: block;
+    margin-bottom: 45px;
+   }
+   #loginPanel  ul li:not(:last-of-type){
+    margin-bottom: 35px;
+  }
+  #loginPanel  ul li a{
+    color: #63686c;
+    font-size: 14px;
+    font-weight: 500;
+    
+   }
+   #loginPanel  ul li a:hover{
+    color: #c2b9b9;
+    transition-duration: 0.5s;
+   }
+   #loginPanel ul li:last-of-type{
+    margin-bottom: 65px;
+   }
+   #loginPanel input[type='button'] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);    
+    z-index: 100;
+    transition-duration: 0.6s;
+  }
+  header > div div > button.loginActive{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(63, 62, 62);
+    color: rgb(255, 255, 255);
+  }
+  header > div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 100px;
+    transition: height 0.3s ease;
+  }
+  header >*{
+    float: left;
+  }
+  header::after{
+    content: ''; display: block; clear: both;
+  }
+  header > div h1{
+    width: 7.99%;
+    min-width:132px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  header h1 a{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  header nav{
+    min-width: 750px;
+    position: absolute;
+    top:44%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+  }
+  header nav::after{ 
+    content: ''; display: block; clear: both;
+  }
+  header nav ul{
+    float: left;
+    width: 25%;
+    min-height:80px;
+  }
+  header nav ul li{
+    cursor: pointer;
+  }
+
+  header nav ul li h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fefefe;
+  }
+  header nav ul li:hover h3{
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+  }
+  header nav ul > li:hover{
+    padding-bottom: 30px;
+  }
+  header nav ul li ol li{
+    font-size:15px;
+    font-weight: 400;
+    transition-duration: 0.6s;
+    opacity: 0;
+  }
+  header nav ul li:hover ol li{
+    margin-top: 15px;
+    opacity: 100;
+  }
+  header nav ul li ol li a{
+    color: #c2c7d1;
+  }
+  header nav ul li ol li a:hover{
+    color: #c2b9b9;
+    transition-duration: 0.3s;
+  }
+  header > div > div:last-of-type{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translate(0,-40%);
+  }
+  header div div span strong{
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  header div div button{
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 36px;
+    cursor: pointer;
+    background-color: white;
+  }
+  header div div span button{
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #434343;
+  }
+  header div div > button{
+    vertical-align: middle;
+    font-size:22px;
+    font-weight: 400;
+    color: #434343;
+    margin-left: 10px;
+  }
+  header div div > button:nth-of-type(2){
+    display: none;
+  }
+  header.scrollbg div h1 a,
+  header.scrollbg div nav ul li h3,
+  header.scrollbg div div span strong{
+    color: black;
+  }
+  header.scrollbg div nav ul li:hover h3{
+    border-bottom: 1px solid black;
+  }
+  header.scrollbg div div button{
+    background-color: black;
+    color: white;
+  }
+  .headeritem{
+    background-color: white;
+  }
+  .headeritem h1 a{
+    color: black;
+  }
+  .headeritem nav h3{
+    color: black;
+  }
+  .headeritem div div span strong{
+    color: black;
+  }
+  .headeritem div div button{
+    background-color: black;
+    color: white;
+  }
+  footer{
+    padding: 170px 2% 155px;
+    border-top: 1px solid black;
+    margin-top: 105px;
+  }
+  footer section > div{
+    float: left;
+  }
+  footer section:after{
+    content: ''; display: block; clear: both;
+  }
+  footer section > div:first-of-type{
+    width: 43.66%;
+  }
+  footer section > div:first-of-type h2{
+    max-width: 765px;
+    font-size: 52px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 65px;
+  }
+  footer section > div:first-of-type div{
+    min-width: 480px;
+    width:67.97%;
+    border-bottom: 1px solid black;
+  }
+ 
+  footer section > div:first-of-type div::after{
+    content: ''; display: block; clear: both;
+  }
+  footer section > div:first-of-type div input[type='email']{
+    padding: 20px 0 20px;
+    font-size: 18px;
+    color:black;
+    background: none;
+    border: none;
+    width:90% ;
+  }
+  footer section > div:first-of-type div input[type='email']::placeholder{
+    font-size: 22px;
+    font-weight: 600;
+    color: #d0d0d0;
+  }
+  footer section > div:first-of-type div input[type='submit']{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 9%;
+  }
+  footer section > div:last-of-type{
+    width: 56.34%;
+  }
+  footer section > div:last-of-type div{
+    float: left;
+  }
+  footer section > div:last-of-type::after{
+    content: ''; display: block; clear: both;
+  }
+  footer section > div:last-of-type div{
+    width: 33.33%;
+    text-align: right;
+  }
+  footer section > div:last-of-type div h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 70px;
+  }
+  footer section > div:last-of-type div ul li:not(:last-of-type){
+    margin-bottom: 25px;
+  }
+  footer section > div:last-of-type div ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+  }
+  footer section > div:last-of-type div ul li a:hover{
+    text-decoration: underline;
+  }
+  footer >div{
+    position: relative;
+    padding-top: 238px;
+  }
+  footer >div p{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+  }
+  footer > div >*{
+    float: left;
+  }
+  footer >div:after{
+    content: ''; display: block; clear: both;
+  }
+  footer >div > a{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100px; height: 100px; border: 1px solid #cecece;
+    display: block;
+    border-radius: 50px;
+  }
+  footer >div > a img{
+    width: 100px; height: 140px;
+  }
+  footer > div div{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+  }
+  footer > div div span{
+    text-align: right;
+    display: inline-block;
+  }
+  footer > div div a:hover{
+    text-decoration: underline;
+  }
+  footer > div div span a{
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+  }
+  footer > div div span:not(:first-of-type){
+    vertical-align: sub;
+    width: 38px;
+    height: 10px;
+    margin-left: 3%;
+    text-indent: -9999px;
+  }
+   
+  
+}
+/* desktop */
