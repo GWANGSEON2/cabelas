@@ -575,6 +575,7 @@ li{
   footer section > div:last-of-type{
     width: 100%;
     padding-top:50px;
+    cursor: pointer;
   }
   footer section > div:last-of-type div{
     width:100%;
