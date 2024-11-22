@@ -37,7 +37,7 @@
     }
     .index_container > p{
         padding:80px 0 100px;
-        max-width:665px;
+        max-width:450px;
         margin: 0 auto;
         font-size:25px;
         line-height: 70px;
@@ -519,7 +519,7 @@
         
     }
     .index_container > div:last-of-type div:first-of-type strong{
-        font-size: 50px;
+        font-size: 40px;
         font-weight:700;
         color: black;
         padding-left: 7%;
@@ -2024,7 +2024,7 @@
     }
     .login_container form > div div:nth-of-type(1) label{
         padding: 2px 10px 0 0;
-        background: url('../images/loginstar.png') right 30% top no-repeat;
+        background: url('../images/loginstar.png') right 50% top no-repeat;
     }
     .login_container form > div div:nth-of-type(2){
         position: relative;
@@ -2037,7 +2037,7 @@
     }
     .login_container form > div div:nth-of-type(2) label{
         padding: 2px 10px 0 0;
-        background: url('../images/loginstar.png') right 74% top no-repeat;
+        background: url('../images/loginstar.png') right 80% top no-repeat;
     }
     .login_container form > div div:not(:nth-of-type(3)) input{
         width: 100%;
