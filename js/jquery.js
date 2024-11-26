@@ -392,7 +392,7 @@ $(function() {
             });
         }
     }
-    // lateralmovement();
+    lateralmovement();
 });
 
 function animateItems(){

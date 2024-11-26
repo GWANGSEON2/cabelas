@@ -12,7 +12,91 @@
     // GENERAL
     mode: 'horizontal',
     slideSelector: '',
-    infiniteLoop: true,
+ <div class="slide">
+            <h2>Product recommendation</h2>
+            <ul class="recommandSlider">
+                <li>
+                    <img src="images/detail_stand_slideimg1.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg2.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg3.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg4.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg1.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg2.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg3.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+                <li>
+                    <img src="images/detail_stand_slideimg4.gif" alt="slideimg1">
+                    <strong>Gel Blaster Starfire Glow-In-The-Dark</strong>
+                    <p>
+                        The Advanced Elements® AdvancedFrame®
+                        Inflatable Kayak in Green is a hybrid of a
+                        folding frame kayak and an inflatable kayak.
+                    </p>
+                    <a href="detail_Sleeping1.html">SHOP</a>
+                </li>
+            </ul>
+        </div>    infiniteLoop: true,
     hideControlOnEnd: false,
     speed: 500,
     easing: null,
