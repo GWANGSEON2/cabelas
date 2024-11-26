@@ -223,19 +223,14 @@ headerHg();
 
 // header scroll
 function scrollEvent() {
-    // 최초 실행 시 스크롤 위치 체크
     $(window).scroll(function() {
-        // 스크롤 위치가 50px 이상이면 header에 'scrollbg' 클래스 추가
         if ($(this).scrollTop() > 50) {
             $('header').addClass('scrollbg');
         } else {
             $('header').removeClass('scrollbg');
         }
     });
-
-    // 화면 리사이즈 후에도 동작하도록 처리
     $(window).resize(function() {
-        // 리사이즈 시, 스크롤 위치를 다시 확인
         if ($(this).scrollTop() > 50) {
             $('header').addClass('scrollbg');
         } else {
@@ -364,38 +359,41 @@ function basicslider() {
         touchEnabled: false,
     });
 }
-function lateralmovement() {
-    var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
+$(function() {
+    function lateralmovement() {
+        var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
 
-    // $scrollContainer가 존재하는지 확인
-    if ($scrollContainer.length > 0) {
-        var maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth;
-        var autoSlideInterval;
+        // $scrollContainer가 존재하는지 확인
+        if ($scrollContainer.length > 0) {
+            var maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth;
+            var autoSlideInterval;
 
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(function() {
-                var currentScrollLeft = $scrollContainer.scrollLeft();
-                
-                // 끝까지 갔을 때 다시 처음으로 돌아가지 않고 끝까지 계속 스크롤
-                if (currentScrollLeft >= maxScrollLeft) {
-                    $scrollContainer.scrollLeft(0); // 끝까지 갔으면 처음으로 다시 돌아가서 무한 반복
-                } else {
-                    $scrollContainer.scrollLeft(currentScrollLeft + 1);  // 슬라이드를 자동으로 1px씩 이동
-                }
-            }, 10);  // 10ms 간격으로 자동 슬라이드
-        }
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(function() {
+                    var currentScrollLeft = $scrollContainer.scrollLeft();
 
-        // 자동 슬라이드 시작
-        startAutoSlide();
-
-        // 화면 크기 조정 시 자동 슬라이드를 멈추지 않음
-        $(window).resize(function() {
-            if (!autoSlideInterval) {
-                startAutoSlide();  // 자동 슬라이드 시작 (resize 후 자동 슬라이드가 없을 경우)
+                    // 끝까지 갔을 때 처음으로 돌아가서 반복
+                    if (currentScrollLeft >= maxScrollLeft) {
+                        $scrollContainer.scrollLeft(0); // 처음으로 이동
+                    } else {
+                        $scrollContainer.scrollLeft(currentScrollLeft + 1); // 1px씩 이동
+                    }
+                }, 10); // 10ms 간격으로 슬라이드
             }
-        });
+
+            // 자동 슬라이드 시작
+            startAutoSlide();
+
+            // 화면 크기 조정 시 자동 슬라이드 유지
+            $(window).resize(function() {
+                if (!autoSlideInterval) {
+                    startAutoSlide();
+                }
+            });
+        }
     }
-}
+    // lateralmovement();
+});
 
 function animateItems(){
         var $items = $('.index_container > div:nth-of-type(6) > div ul li');
