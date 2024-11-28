@@ -395,7 +395,7 @@ function lateralmovement() {
     }
 }
 
-// 문서가 준비되었을 때 실행
+// 문서가 준비되었을 때 자동으로 슬라이드 실행
 $(document).ready(function () {
     lateralmovement();
 });
