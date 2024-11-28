@@ -369,16 +369,13 @@ function lateralmovement() {
             setInterval(function () {
                 var currentScrollLeft = $scrollContainer.scrollLeft();
 
-                // 끝까지 갔을 때 처음으로 돌아가서 반복
                 if (currentScrollLeft >= maxScrollLeft) {
-                    $scrollContainer.scrollLeft(0); // 처음으로 이동
+                    $scrollContainer.scrollLeft(0); 
                 } else {
-                    $scrollContainer.scrollLeft(currentScrollLeft + 1); // 1px씩 이동
+                    $scrollContainer.scrollLeft(currentScrollLeft + 1);
                 }
-            }, 10); // 10ms 간격으로 슬라이드
+            }, 8);
         }
-
-        // 자동 슬라이드 시작
         startAutoSlide();
 
         // 화면 크기 조정 시 최대 스크롤 값 재계산 후 슬라이드 유지
