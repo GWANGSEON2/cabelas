@@ -359,35 +359,55 @@ function basicslider() {
     });
 }
 function lateralmovement() {
+    // DOM 요소를 선택
     var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
 
     // $scrollContainer가 존재하는지 확인
     if ($scrollContainer.length > 0) {
+        // 최대 스크롤 값을 계산
         var maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth;
 
+        // 슬라이드 동작 함수
         function startAutoSlide() {
             setInterval(function () {
                 var currentScrollLeft = $scrollContainer.scrollLeft();
 
+                // 끝에 도달하면 초기화, 아니면 계속 이동
                 if (currentScrollLeft >= maxScrollLeft) {
-                    $scrollContainer.scrollLeft(0); 
+                    $scrollContainer.scrollLeft(0);
                 } else {
-                    $scrollContainer.scrollLeft(currentScrollLeft + 1);
+                    $scrollContainer.scrollLeft(currentScrollLeft + 2); // 스크롤 속도 조정
                 }
             }, 20);
         }
-        startAutoSlide();
 
-        // 화면 크기 조정 시 최대 스크롤 값 재계산 후 슬라이드 유지
+        // 초기화된 경우에만 슬라이드 시작
+        if (maxScrollLeft > 0) {
+            startAutoSlide();
+        }
+
+        // 화면 크기 변경 시 최대 스크롤 값 재계산 (디바운싱 적용)
+        let resizeTimeout;
         $(window).resize(function () {
-            maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth; // 새 값 계산
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function () {
+                maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth;
+            }, 200); // 200ms 간격으로 디바운싱 처리
         });
+    } else {
+        console.warn('스크롤 컨테이너가 존재하지 않습니다.');
     }
 }
 
-// 문서가 준비되었을 때 자동 실행
+// 문서 준비 후 DOM 요소가 동적으로 로드될 가능성을 처리
 $(document).ready(function () {
-    lateralmovement();
+    var interval = setInterval(function () {
+        var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
+        if ($scrollContainer.length > 0) {
+            clearInterval(interval); // 요소가 확인되면 반복 중지
+            lateralmovement(); // 슬라이드 시작
+        }
+    }, 100); // 100ms 간격으로 DOM 확인
 });
 
 function animateItems(){
