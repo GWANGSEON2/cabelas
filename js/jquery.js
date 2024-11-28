@@ -63,7 +63,7 @@ function toggleActiveClass() {
 document.addEventListener("DOMContentLoaded", toggleActiveClass);
 
   function list_menu() {
-    if ($(window).width() <= 1279) {  // 화면 너비가 1279px 이하일 때
+    if ($(window).width() <= 1279) { 
         $('.list_container > div:nth-of-type(2) section > div > ul li, .list_container > div:nth-of-type(2) section > div > div > ul li, .list_container > div:nth-of-type(2) section > ul li').on('click', function() {
             var $this = $(this);
             var $divInside = $this.find('div');
@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", toggleActiveClass);
                 .fadeOut(100)
                 .css('display', 'none');
             
-            // 현재 클릭한 li의 div가 숨겨져 있으면 보이게, 그렇지 않으면 숨기기
             if ($divInside.css('display') === 'none') {
                 $divInside.stop(true, true).fadeIn(100).css('display', 'block');
             } else {
@@ -359,39 +358,45 @@ function basicslider() {
         touchEnabled: false,
     });
 }
-$(function() {
-    function lateralmovement() {
-        var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
+function lateralmovement() {
+    var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
 
-        // $scrollContainer가 존재하는지 확인
-        if ($scrollContainer.length > 0) {
-            var maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth;
-            var autoSlideInterval;
+    // $scrollContainer가 존재하는지 확인
+    if ($scrollContainer.length > 0) {
+        var maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth;
+        var autoSlideInterval;
 
-            function startAutoSlide() {
-                autoSlideInterval = setInterval(function() {
-                    var currentScrollLeft = $scrollContainer.scrollLeft();
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(function () {
+                var currentScrollLeft = $scrollContainer.scrollLeft();
 
-                    // 끝까지 갔을 때 처음으로 돌아가서 반복
-                    if (currentScrollLeft >= maxScrollLeft) {
-                        $scrollContainer.scrollLeft(0); // 처음으로 이동
-                    } else {
-                        $scrollContainer.scrollLeft(currentScrollLeft + 1); // 1px씩 이동
-                    }
-                }, 10); // 10ms 간격으로 슬라이드
-            }
-
-            // 자동 슬라이드 시작
-            startAutoSlide();
-
-            // 화면 크기 조정 시 자동 슬라이드 유지
-            $(window).resize(function() {
-                if (!autoSlideInterval) {
-                    startAutoSlide();
+                // 끝까지 갔을 때 처음으로 돌아가서 반복
+                if (currentScrollLeft >= maxScrollLeft) {
+                    $scrollContainer.scrollLeft(0); // 처음으로 이동
+                } else {
+                    $scrollContainer.scrollLeft(currentScrollLeft + 1); // 1px씩 이동
                 }
-            });
+            }, 10); // 10ms 간격으로 슬라이드
         }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval); // 기존 슬라이드를 멈춤
+        }
+
+        // 자동 슬라이드 시작
+        startAutoSlide();
+
+        // 화면 크기 조정 시 최대 스크롤 값 재계산 후 슬라이드 유지
+        $(window).resize(function () {
+            stopAutoSlide(); // 기존 슬라이드를 멈추고
+            maxScrollLeft = $scrollContainer[0].scrollWidth - $scrollContainer[0].clientWidth; // 새 값 계산
+            startAutoSlide(); // 새로 시작
+        });
     }
+}
+
+// 문서가 준비되었을 때 실행
+$(document).ready(function () {
     lateralmovement();
 });
 
