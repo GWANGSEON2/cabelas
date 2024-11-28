@@ -374,7 +374,7 @@ function lateralmovement() {
                 } else {
                     $scrollContainer.scrollLeft(currentScrollLeft + 1);
                 }
-            }, 8);
+            }, 10);
         }
         startAutoSlide();
 
