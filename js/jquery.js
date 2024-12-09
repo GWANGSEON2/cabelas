@@ -410,6 +410,21 @@ $(document).ready(function () {
     }, 100); // 100ms 간격으로 DOM 확인
 });
 
+// DOM 변경을 감지하여 슬라이드 작동
+var observer = new MutationObserver(function () {
+    var $scrollContainer = $('.index_container > div:nth-of-type(3) > div ul');
+    if ($scrollContainer.length > 0) {
+        lateralmovement();
+        observer.disconnect(); // 이후 추가적인 감지 중지
+    }
+});
+
+// 옵저버 설정
+observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+});
+
 function animateItems(){
         var $items = $('.index_container > div:nth-of-type(6) > div ul li');
         var index = 0;  
